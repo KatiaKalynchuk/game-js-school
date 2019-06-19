@@ -13,6 +13,7 @@ let scores = [0, 0];
 let activePlayer = 0;
 let current = 0;
 const diceElement = document.querySelectorAll('.dice');
+const maxScore = document.querySelector('.input');
 
 const initGame = () => {
   document.querySelector('#current-0').textContent = 0;
@@ -45,7 +46,7 @@ document.querySelector('.btn-roll').addEventListener('click', function() {
   current += points;
   document.getElementById('current-'+activePlayer).textContent = current;
 
-  if (scores[activePlayer] + current >= 20) {
+  if (scores[activePlayer] + current >= maxScore.value) {
     alert(`Player ${activePlayer} won!!!`);
   }
 });

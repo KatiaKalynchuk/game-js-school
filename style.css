@@ -153,5 +153,13 @@ i {
     top: 260px;
 }
 
+.input {
+    left: 44%;
+    position: relative;
+    border: 1px solid orange;
+    border-radius: 5px;
+    height: 25px;
+}
+
 .winner { background-color: #f7f7f7; }
 .winner .player-name { font-weight: 300; color: #EB4D4D; }
