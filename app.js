@@ -14,6 +14,10 @@ let activePlayer = 0;
 let current = 0;
 const diceElement = document.querySelectorAll('.dice');
 const maxScore = document.querySelector('.input');
+const player0 = prompt('Player 1', 'Player 1');
+const player1 = prompt('Player 2', 'Player 2');
+document.getElementById('name-0').innerText = player0;
+document.getElementById('name-1').innerText = player1;
 
 const initGame = () => {
   document.querySelector('#current-0').textContent = 0;
